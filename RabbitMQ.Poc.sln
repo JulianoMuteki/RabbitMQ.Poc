@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Poc.Consumer", "sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Poc.Publish", "src\RabbitMQ.Poc.Publish\RabbitMQ.Poc.Publish.csproj", "{74574185-1B46-4B08-8EF6-BD3932A5E1B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Poc.Channel", "src\RabbitMQ.Poc.Channel\RabbitMQ.Poc.Channel.csproj", "{DA0DFDEE-2957-4D18-A1AB-A84A85DDADEA}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{74574185-1B46-4B08-8EF6-BD3932A5E1B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74574185-1B46-4B08-8EF6-BD3932A5E1B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74574185-1B46-4B08-8EF6-BD3932A5E1B5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DA0DFDEE-2957-4D18-A1AB-A84A85DDADEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA0DFDEE-2957-4D18-A1AB-A84A85DDADEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA0DFDEE-2957-4D18-A1AB-A84A85DDADEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA0DFDEE-2957-4D18-A1AB-A84A85DDADEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
