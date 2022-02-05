@@ -22,14 +22,14 @@ namespace RabbitMQ.Poc.Publish
             {
                 while (true)
                 {                    
-                    var teste = $"Hello world - " + 
+                    var teste = $"Sending.... test - " + 
                                 $"{DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")}";
                     Console.WriteLine(teste);
 
-                    Thread.Sleep(2000);
+                    Thread.Sleep(1000);
 
                     channel.QueueDeclare(
-                        queue: "ctrlinvest",
+                        queue: "teste1",
                         durable: false,
                         exclusive: false,
                         autoDelete: false,
@@ -37,11 +37,11 @@ namespace RabbitMQ.Poc.Publish
 
                     string message =
                         $"{DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")} - " +
-                        $"Message content: {teste}";
+                        $"Text Message example: {teste}";
                     var body = Encoding.UTF8.GetBytes(message);
 
                     channel.BasicPublish(exchange: "",
-                                         routingKey: "tests",
+                                         routingKey: "teste1",
                                          basicProperties: null,
                                          body: body);
 

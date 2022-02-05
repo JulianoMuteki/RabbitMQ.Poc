@@ -21,7 +21,7 @@ namespace RabbitMQ.Poc.Consumer
             using (var channel = connection.CreateModel())
             {
                 channel.QueueDeclare(
-                    queue: "ctrlinvest",
+                    queue: "teste1",
                     durable: false,
                     exclusive: false,
                     autoDelete: false,
@@ -37,7 +37,7 @@ namespace RabbitMQ.Poc.Consumer
                     Console.WriteLine(Environment.NewLine + "[New message received] " + message);
                 };
 
-                channel.BasicConsume(queue: "ctrlinvest",
+                channel.BasicConsume(queue: "teste1",
                      autoAck: true,
                      consumer: consumer);
                 Console.WriteLine(Environment.NewLine);
