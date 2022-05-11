@@ -21,7 +21,7 @@ namespace RabbitMQ.Poc.Consumer
             using (var channel = connection.CreateModel())
             {
                 channel.QueueDeclare(
-                    queue: "teste1",
+                    queue: "teste2",
                     durable: false,
                     exclusive: false,
                     autoDelete: false,
@@ -32,12 +32,12 @@ namespace RabbitMQ.Poc.Consumer
                 consumer.Received += (sender, eventArgs) =>
                 {
                     var body = eventArgs.Body.ToArray();
-                    var message = Encoding.UTF8.GetString(body);                    
-
+                    var message = Encoding.UTF8.GetString(body);
+                    Console.WriteLine("Receiving ********************************************");
                     Console.WriteLine(Environment.NewLine + "[New message received] " + message);
                 };
 
-                channel.BasicConsume(queue: "teste1",
+                channel.BasicConsume(queue: "teste2",
                      autoAck: true,
                      consumer: consumer);
                 Console.WriteLine(Environment.NewLine);

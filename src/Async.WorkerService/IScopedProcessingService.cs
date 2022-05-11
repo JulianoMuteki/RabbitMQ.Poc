@@ -32,7 +32,7 @@ namespace Async.WorkerService
                 _logger.LogInformation(
                     "Scoped Processing Service is working. Count: {Count} - key: {key}", executionCount, key);
 
-                await Task.Delay(100000, stoppingToken);
+                await Task.Delay(1000, stoppingToken);
             }
         }
     }

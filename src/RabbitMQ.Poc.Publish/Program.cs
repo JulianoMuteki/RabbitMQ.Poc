@@ -26,10 +26,10 @@ namespace RabbitMQ.Poc.Publish
                                 $"{DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")}";
                     Console.WriteLine(teste);
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(5000);
 
                     channel.QueueDeclare(
-                        queue: "teste1",
+                        queue: "teste2",
                         durable: false,
                         exclusive: false,
                         autoDelete: false,
@@ -41,7 +41,7 @@ namespace RabbitMQ.Poc.Publish
                     var body = Encoding.UTF8.GetBytes(message);
 
                     channel.BasicPublish(exchange: "",
-                                         routingKey: "teste1",
+                                         routingKey: "teste2",
                                          basicProperties: null,
                                          body: body);
 

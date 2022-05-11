@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.WorkerService", "src\Async.WorkerService\Async.WorkerService.csproj", "{6EB19EE9-D116-43AD-AC50-DD50314B8B3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerService.RabbitMQ.Publish", "src\WorkerService.RabbitMQ.Publish\WorkerService.RabbitMQ.Publish.csproj", "{96B23B33-99DD-4298-A4BF-CB17098957F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{6EB19EE9-D116-43AD-AC50-DD50314B8B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EB19EE9-D116-43AD-AC50-DD50314B8B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EB19EE9-D116-43AD-AC50-DD50314B8B3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96B23B33-99DD-4298-A4BF-CB17098957F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96B23B33-99DD-4298-A4BF-CB17098957F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96B23B33-99DD-4298-A4BF-CB17098957F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96B23B33-99DD-4298-A4BF-CB17098957F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
